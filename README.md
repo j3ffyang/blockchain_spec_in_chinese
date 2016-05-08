@@ -2,6 +2,17 @@
 
 Disclaimer: the content in this document was collected from my personal idea and information from open source community, specially Hyperledger at Github.com and Linux Foundations.
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [区块链的技术细节](#区块链的技术细节)
+- [目录](#目录)
+	- [文档目标](#文档目标)
+	- [技术层面](#技术层面)
+		- [R3CEV](#r3cev)
+			- [Corda的主要特点](#corda的主要特点)
+
+<!-- /TOC -->
+
 # 目录
 1. [文档目标](#文档目标)
 2. [技术层面](#技术层面)    
