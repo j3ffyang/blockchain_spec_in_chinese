@@ -9,12 +9,15 @@ Disclaimer: the content in this document was collected from my personal idea and
 - [目录](#目录)
 	- [1. 文档目标](#1-文档目标)
 	- [2. 技术层面](#2-技术层面)
-		- [2.1 R3CEV](#21-r3cev)
-			- [2.1.1 Corda的主要特点](#211-corda的主要特点)
-			- [2.1.2 开发在银行的业务场景](#212-开发在银行的业务场景)
-			- [2.1.3 反对的声音](#213-反对的声音)
-			- [2.1.4 技术团队主要成员](#214-技术团队主要成员)
+		- [2.1. R3CEV](#21-r3cev)
+			- [2.1.1. Corda的主要特点](#211-corda的主要特点)
+			- [2.1.2. 开发在银行的业务场景](#212-开发在银行的业务场景)
+			- [2.1.3. 反对的声音](#213-反对的声音)
+			- [2.1.4. 技术团队主要成员](#214-技术团队主要成员)
 		- [2.2 Chain.com推出Chain Open Standard](#22-chaincom推出chain-open-standard)
+		- [2.3. DAH收购Elevence Digital Finance](#23-dah收购elevence-digital-finance)
+	- [3. HyperLedger Project的技术架构](#3-hyperledger-project的技术架构)
+		- [3.1. 框架](#31-框架)
 
 <!-- /TOC -->
 
@@ -22,8 +25,8 @@ Disclaimer: the content in this document was collected from my personal idea and
 阐述和分析包括R3CEV，Digital Asset Holdings (DAH)，Chain.com等区块链软件公司在区块链（BlockChain）技术层面的细节，和Hyperledger Project的技术架构与一些细节。
 
 ## 2. 技术层面
-###  2.1 R3CEV
-#### 2.1.1 Corda的主要特点
+###  2.1. R3CEV
+#### 2.1.1. Corda的主要特点
 * Corda has no unnecessary global sharing of data: only those parties with a legitimate need to know can see the data within an agreement    
     Corda无需全网分享（账本）信息：只有在同一合约中和有合理需求的主体才可以看到
 
@@ -56,18 +59,20 @@ Corda设计的五个维度： consensus（共识）, validity（交易验证）,
 
 摘自R3CEV的CTO Richard Brown的blog:    
 
-Corda addresses these key points in distinct ways offering “different solutions for different problems.” Despite its focus on some of the same goals the team is “not building a blockchain” and they reject the idea that all data should be available to everyone. Brown explains that financial agreements between institutions need more than just a basic consensus mechanism.    
+> Corda addresses these key points in distinct ways offering “different solutions for different problems.” Despite its focus on some of the same goals the team is “not building a blockchain” and they reject the idea that all data should be available to everyone.
 
-“We are not building a blockchain. Unlike other designs in this space, our starting point is individual agreements between firms (“state objects”, governed by “contract code” and associated “legal prose”). We reject the notion that all data should be copied to all participants, even if it is encrypted.” （我们不认同，即使在加密的情况下，所有的数据都需要在所有参与节点拷贝)    
+Brown explains that financial agreements between institutions need more than just a basic consensus mechanism.    
 
-#### 2.1.2 开发在银行的业务场景    
+> “We are not building a blockchain. Unlike other designs in this space, our starting point is individual agreements between firms (“state objects”, governed by “contract code” and associated “legal prose”). We reject the notion that all data should be copied to all participants, even if it is encrypted.” （我们不认同，即使在加密的情况下，所有的数据都需要在所有参与节点拷贝)    
+
+#### 2.1.2. 开发在银行的业务场景    
 [http://www.coindesk.com/r3-reveals-8-areas-of-focus-for-blockchain-bank-trials/](http://www.coindesk.com/r3-reveals-8-areas-of-focus-for-blockchain-bank-trials/)    
 A consortium of over 40 financial institutions around the world is currently working on at least eight different proofs-of-concept (PoCs) to show how distributed ledgers can be used to streamline a wide range of transactions on Wall Street – and make them easier to regulate (更容易地监管).
 
-####  2.1.3 反对的声音    
+####  2.1.3. 反对的声音    
 According to the CEO of Overstock.com, Patrick Byrne, the new project is likely to slow down innovation within the bitcoin industry. The new consortium, he said, is just a means used by the Wall Street bankers to stifle innovation.
 
-#### 2.1.4 技术团队主要成员    
+#### 2.1.4. 技术团队主要成员    
 Name | Title and Background | Picture    
 ----|----|----    
 James Carlyle | Chief Engineer, 来自Barclays | ![James Carlyle](img/20160508_jamescarlyle.png)    
@@ -107,10 +112,23 @@ Chain.com Open Standard 是一款产品。它是由世界顶尖的金融公司�
 
 * 共识机制- Simplified Byzantine Fault Tolerance (SBFT，简化拜占庭容错)
 
-|----|    
-| 首先一个block generator提交一个加入block的交易请求    
-其他block signers认可（ratify），并且签名    
-其他的network members在有足够signers数量的条件下，接受block的交易请求    
-生成新的block    
-交易结束。交易历史不可篡改     
-|
+> 1. 首先一个block generator提交一个加入block的交易请求    
+2. 其他block signers认可（ratify），并且签名    
+3. 其他的network members在有足够signers数量的条件下，接受block的交易请求    
+4. 生成新的block    
+5. 交易结束。交易历史不可篡改     
+
+(In SBFT, one designated block generator collects and validates proposed transactions, periodically batching them together into a new-block proposal. Other designated block signers ratify the proposed block with their signatures. All network members know the identities of the block signers and accept blocks only if signed by a sufficient number of signers. This ensures that competing transactions will be resolved, transactions will be final, and history cannot be rewritten.)
+
+### 2.3. DAH收购Elevence Digital Finance    
+[http://www.coindesk.com/digital-asset-acquires-elevence/](http://www.coindesk.com/digital-asset-acquires-elevence/)    
+
+With the purchase deal, Digital Asset Holdings has also unveiled Digital Asset Modeling Language (DAML), the language developed for financial services as an alternative to Smart Contracts.    
+
+During the past few months the startup has been working on integrating Elevence’s technology into its software. It will improve the company’s existing system by offering a new way to prove updates to a distributed ledger while keeping data private. Parties of the transaction don’t need to reveal the details of the agreement to third parties, as it can be processed only by the relevant participants.    
+* DAH四月份收购瑞士的Elevence Digital Finance，主要编写证券，现金和衍生产品的智能合约
+* 建立设置Digital Asset Modeling Language (DAML，数字资产模型语言)
+
+## 3. HyperLedger Project的技术架构
+### 3.1. 框架
+<img src="img/bc_arch_overview.png" width="500px">
