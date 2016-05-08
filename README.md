@@ -96,3 +96,21 @@ Chain.com Open Standard 是一款产品。它是由世界顶尖的金融公司�
 
 * 智能合约（案例之一。其他案例可以参考官方网站）    
 ![smartContract Payment](img/smartcontract_payment.png)    
+
+* 私密 - one-time-use addresses, zero knowledge proofs, and encrypted metadata.    
+
+* 数据标准(metadata)和数据模型(data model)    
+
+* 无论文本，加密数据，和hashed数据全部可以追溯和审计    
+
+* 针对合约，user-defined assets, 和 transactions with multiple inputs and outputs的优化    
+
+* 共识机制- Simplified Byzantine Fault Tolerance (SBFT，简化拜占庭容错)
+
+|----|    
+| 首先一个block generator提交一个加入block的交易请求    
+其他block signers认可（ratify），并且签名    
+其他的network members在有足够signers数量的条件下，接受block的交易请求    
+生成新的block    
+交易结束。交易历史不可篡改     
+|
