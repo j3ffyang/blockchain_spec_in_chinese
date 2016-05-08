@@ -7,12 +7,12 @@ Disclaimer: the content in this document was collected from my personal idea and
 2. [技术层面](#技术层面)    
 2.1 [R3CEV](#R3CEV)
 
-## 1. 文档目标    
+## 文档目标    
 阐述和分析包括R3，Digital Asset Holdings (DAH)，Chain.com等区块链软件公司在区块链（BlockChain）技术层面的细节，和Hyperledger Project的技术架构与一些细节。
 
-## 2. 技术层面
-###  2.1 R3CEV
-#### 2.1.1 Corda的主要特点
+## 技术层面
+###  R3CEV
+#### Corda的主要特点
 * Corda has no unnecessary global sharing of data: only those parties with a legitimate need to know can see the data within an agreement    
     Corda无需全网分享（账本）信息：只有在同一合约中和有合理需求的主体才可以看到
 
