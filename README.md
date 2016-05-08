@@ -150,7 +150,7 @@ During the past few months the startup has been working on integrating Elevence
 Company | Consensus Management
 ----|----    
 Cachin/IBM PBFT | https://www.zurich.ibm.com/~cca/papers/pax.pdf
-Microsoft PBFT | http://research.microsoft.com/.../mcastro/.../p398-castro-bft-tocs.pdf
+Microsoft PBFT | [http://research.microsoft.com/.../mcastro/.../p398-castro-bft-tocs.pdf](http://research.microsoft.com/en-us/um/people/mcastro/publications/p398-castro-bft-tocs.pdf)
 Redundant BFT | http://pakupaku.me/plaublin/rbft/report.pdf
 Stellar Consensus | https://www.stellar.org/papers/stellar-consensus-protocol.pdf
 Tendermint Consensus | http://tendermint.com/docs/tendermint.pdf
