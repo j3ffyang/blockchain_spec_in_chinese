@@ -86,4 +86,4 @@ https://chain.com/os/
 “The Chain Open Standard is the product of a unique collaboration between some of the world's leading financial firms and a team of Silicon Valley engineers, cryptographers, and data scientists. We are designing a blockchain protocol by putting real financial use cases at the center of an iterative R&D process.”    
 Chain.com Open Standard 是一款产品。它是由世界顶尖的金融公司和硅谷的工程师的独特组合，并且包括密码学家与数据科学家。我们正在设计一个BlockChain的在真实金融行业的标准。    
 
-！[Chain.com Open Standard](img/chainos.png)    
+![Chain.com Open Standard](img/chainos.png)    
