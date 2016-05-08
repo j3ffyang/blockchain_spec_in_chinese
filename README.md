@@ -67,7 +67,9 @@ A consortium of over 40 financial institutions around the world is currently wor
 According to the CEO of Overstock.com, Patrick Byrne, the new project is likely to slow down innovation within the bitcoin industry. The new consortium, he said, is just a means used by the Wall Street bankers to stifle innovation.
 
 #### 2.1.4 技术团队主要成员    
-Name | Title and Bankground | Picture    
+Name | Title and Background | Picture    
 ----|----|----    
-James Carlyle | Chief Engineer | ![James Carlyle](img/20160508_jamescarlyle.png)    
-Mike Hearn | Lead Platform Engineer |
+James Carlyle | Chief Engineer, 来自Barclays | ![James Carlyle](img/20160508_jamescarlyle.png)    
+Mike Hearn | Lead Platform Engineer, 来自Google和比特币社区 | ![Mike Hearn](img/20160508_mikehearn.png)
+Ian Grigg | Cryptographer | ![Ian Grigg](img/20160508_iangrigg.png)
+Tim Swanson | Head of Research 著有：Great Chain of Numbers | ![Tim Swanson](img/20160508_timswanson.png)
