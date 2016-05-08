@@ -3,7 +3,7 @@
 Disclaimer: the content in this document was collected from my personal idea and information from open source community, specially Hyperledger at Github.com and Linux Foundations.
 
 # 目录    
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [区块链的技术细节](#区块链的技术细节)
 - [目录](#目录)
@@ -14,6 +14,7 @@ Disclaimer: the content in this document was collected from my personal idea and
 			- [2.1.2 开发在银行的业务场景](#212-开发在银行的业务场景)
 			- [2.1.3 反对的声音](#213-反对的声音)
 			- [2.1.4 技术团队主要成员](#214-技术团队主要成员)
+		- [2.2 Chain.com推出Chain Open Standard](#22-chaincom推出chain-open-standard)
 
 <!-- /TOC -->
 
