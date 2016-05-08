@@ -18,6 +18,14 @@ Disclaimer: the content in this document was collected from my personal idea and
 		- [2.3. DAH收购Elevence Digital Finance](#23-dah收购elevence-digital-finance)
 	- [3. HyperLedger Project的技术架构](#3-hyperledger-project的技术架构)
 		- [3.1. 框架](#31-框架)
+		- [3.2. 验证（身份，节点等）](#32-验证身份节点等)
+		- [3.3. 共识机制（Byzantine Consensus/ 拜占庭容错）](#33-共识机制byzantine-consensus-拜占庭容错)
+		- [3.4. 账本](#34-账本)
+			- [3.4.1. BlockChain](#341-blockchain)
+				- [3.4.1.1. Block](#3411-block)
+				- [3.4.1.2. Block Hashing](#3412-block-hashing)
+				- [3.4.1.3. NonHashData](#3413-nonhashdata)
+			- [3.4.2. World State](#342-world-state)
 
 <!-- /TOC -->
 
@@ -92,12 +100,12 @@ https://chain.com/os/
 Chain.com Open Standard 是一款产品。它是由世界顶尖的金融公司和硅谷的工程师的独特组合，并且包括密码学家与数据科学家。我们正在设计一个BlockChain的在真实金融行业的标准。    
 
 <!-- ![Chain.com Open Standard](img/chainos.png)    -->
-<img src="img/chainos.png" width="550px"/>
+<img src="img/chainos.png" width="550px" align="middle">
 
 * Assets Definition （资产定义）    
 多维度签名，在交易流程中设定规范和限制    
 <!-- ![Asset Definition](img/asset-def.png) -->
-<img src="img/asset-def.png" width="350px" align="center">    
+<img src="img/asset-def.png" width="350px" align="middle"/>    
 
 * 智能合约（案例之一。其他案例可以参考官方网站）    
 ![smartContract Payment](img/smartcontract_payment.png)    
@@ -132,3 +140,51 @@ During the past few months the startup has been working on integrating Elevence
 ## 3. HyperLedger Project的技术架构
 ### 3.1. 框架
 <img src="img/bc_arch_overview.png" width="640px">
+
+### 3.2. 验证（身份，节点等）
+<img src="img/bc_validating.png" width="640px" alight="middle">
+
+###  3.3. 共识机制（Byzantine Consensus/ 拜占庭容错）    
+默认配置（共识算法可以根据不同的业务需求调整），PBFT (practical byzantine fault tolerance) tolerates up to t<n/3 Byzantine validators (验证节点). (根据拜占庭容错机制，只要2/3验证节点确认的账本，即可成为标准账本。)    
+
+Company | Consensus Management
+----|----    
+Cachin/IBM PBFT | https://www.zurich.ibm.com/~cca/papers/pax.pdf
+Microsoft PBFT | http://research.microsoft.com/.../mcastro/.../p398-castro-bft-tocs.pdf
+Redundant BFT | http://pakupaku.me/plaublin/rbft/report.pdf
+Stellar Consensus | https://www.stellar.org/papers/stellar-consensus-protocol.pdf
+Tendermint Consensus | http://tendermint.com/docs/tendermint.pdf
+
+生产中可以同时灵活应用多个共识机制！
+
+###  3.4. 账本
+The ledger consists of two primary pieces, the blockchain and the world state. 账本包含两部分：   
+* The blockchain/ 数据块（类似比特币的data block），记录交易和数据块间按时序链接（The blockchain is a series of linked blocks that is used to record transactions within the ledger.）
+* The world state，存储在key- value数据库之中的，用于合约记录交易状态（The world state is a key-value database that chaincodes may use to store state when executed by a transaction.）
+
+#### 3.4.1. BlockChain
+##### 3.4.1.1. Block
+
+每一个block都存有上一个block的hash，因此blockchain是连在一起的block。另外，一个block还包含两个信息：存储在block之中的交易列表（the list of transactions contained within the block）和交易执行之后状态的hash（the hash of the world state after executing all transactions in the block.）
+
+```
+message Block {
+  version = 1;
+  google.protobuf.Timestamp timestamp = 2;
+  bytes transactionsHash = 3;
+  bytes stateHash = 4;
+  bytes previousBlockHash = 5;
+  bytes consensusMetadata = 6;
+  NonHashData nonHashData = 7;
+}
+
+message BlockTransactions {
+  repeated Transaction transactions = 1;
+}
+```
+
+##### 3.4.1.2. Block Hashing
+在上面的block中，```previousBlockHash```，```transactionHash```和```stateHash``` 均是利用```SHA3 SHAKE256 algorithm``` (算法)
+##### 3.4.1.3. NonHashData
+Block中也有无需hash的数据，例如交易是否成功，交易ID，等
+#### 3.4.2. World State
