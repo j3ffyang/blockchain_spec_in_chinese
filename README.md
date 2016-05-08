@@ -131,4 +131,4 @@ During the past few months the startup has been working on integrating Elevence
 
 ## 3. HyperLedger Project的技术架构
 ### 3.1. 框架
-<img src="img/bc_arch_overview.png" width="500px">
+<img src="img/bc_arch_overview.png" width="640px">
