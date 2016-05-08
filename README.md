@@ -72,13 +72,14 @@ Name | Title and Background | Picture
 James Carlyle | Chief Engineer, 来自Barclays | ![James Carlyle](img/20160508_jamescarlyle.png)    
 Mike Hearn | Lead Platform Engineer, 来自Google和比特币社区 | ![Mike Hearn](img/20160508_mikehearn.png)
 Ian Grigg | Cryptographer | ![Ian Grigg](img/20160508_iangrigg.png)
-Tim Swanson | Head of Research 著有：Great Chain of Numbers | ![Tim Swanson](img/20160508_timswanson.png)
+Tim Swanson | Head of Research 著有：Great Chain of Numbers | ![Tim Swanson](img/20160508_timswanson.png)    
 
-### 2.2 Chain.com推出Chain Open Standard
-https://chain.com/os/
-与十家金融和电信企业协作，在2016年5月开发推出open- source并permissioned协议软件。
-取名：Chain Open Standard，或 Chain OS 1。
-产品目标：A Protocol（协议标准）for Financial Assets
-协作企业：Capital One, Citi, Fidelity, First Data, Fiserv, Mitsubishi UFJ, Nasdaq, Orange, State Street and Visa
+### 2.2 Chain.com推出Chain Open Standard    
+https://chain.com/os/    
+与十家金融和电信企业协作，在2016年5月开发推出open- source并permissioned协议软件。    
+取名：Chain Open Standard，或 Chain OS 1。    
+产品目标：A Protocol（协议标准）for Financial Assets    
+协作企业：Capital One, Citi, Fidelity, First Data, Fiserv, Mitsubishi UFJ, Nasdaq, Orange, State Street and Visa    
+
 [http://www.coindesk.com/chain-open-standards-visa-citi-nasdaq-business/](http://www.coindesk.com/chain-open-standards-visa-citi-nasdaq-business/)
-“The Chain Open Standard is the product of a unique collaboration between some of the world's leading financial firms and a team of Silicon Valley engineers, cryptographers, and data scientists. We are designing a blockchain protocol by putting real financial use cases at the center of an iterative R&D process.”
+“The Chain Open Standard is the product of a unique collaboration between some of the world's leading financial firms and a team of Silicon Valley engineers, cryptographers, and data scientists. We are designing a blockchain protocol by putting real financial use cases at the center of an iterative R&D process.”    
