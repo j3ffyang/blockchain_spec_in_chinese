@@ -26,6 +26,11 @@ Disclaimer: the content in this document was collected from my personal idea and
 				- [3.4.1.2. Block Hashing](#3412-block-hashing)
 				- [3.4.1.3. NonHashData](#3413-nonhashdata)
 			- [3.4.2. World State](#342-world-state)
+		- [3.5. 合约（ChainCode）](#35-合约chaincode)
+		- [3.6. 安全，认证与加密](#36-安全认证与加密)
+		- [3.7. 标准](#37-标准)
+		- [3.8. 容量与运维](#38-容量与运维)
+		- [3.9. 用例](#39-用例)
 
 <!-- /TOC -->
 
@@ -188,3 +193,33 @@ message BlockTransactions {
 ##### 3.4.1.3. NonHashData
 Block中也有无需hash的数据，例如交易是否成功，交易ID，等
 #### 3.4.2. World State
+
+### 3.5. 合约（ChainCode）
+<img src="img/smartcontract_chaincode.png" width="640px" align="middle">
+
+* 生命周期管理
+
+### 3.6. 安全，认证与加密
+总的来说，区块链不仅利用了分布式账本和加密等独特技术，也利用了现有的安全技术（特别是在银行金融机构的数字安全），来保护区块链的数据安全。
+* 分布账本，节点认证（validating peers）和会员认证（membership management）总体架构
+<img src="img/sec_validating_auth_overview.png" width="640px" align="middle">
+
+* Keys（公钥，私钥）身份和节点，加密（数据库和网络传输），业务安全（身份，角色）
+<img src="img/pub_key_mgmt.png" width="640px" align="middle">
+
+* 实时审计
+
+### 3.7. 标准
+* API (Application Programming Interface)和CLI (Command Line Interface)
+* 账本信息数据
+* 加密算法    
+
+### 3.8. 容量与运维
+* 节点
+* 磁盘
+* 合约模板和变量
+
+###  3.9. 用例
+[https://github.com/hyperledger/hyperledger/wiki/Use-Cases](https://github.com/hyperledger/hyperledger/wiki/Use-Cases)   
+
+<img src="img/fintech_usecases.png">
