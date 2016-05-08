@@ -11,6 +11,9 @@ Disclaimer: the content in this document was collected from my personal idea and
 	- [2. 技术层面](#2-技术层面)
 		- [2.1 R3CEV](#21-r3cev)
 			- [2.1.1 Corda的主要特点](#211-corda的主要特点)
+			- [2.1.2 开发在银行的业务场景](#212-开发在银行的业务场景)
+			- [2.1.3 反对的声音](#213-反对的声音)
+			- [2.1.4 技术团队主要成员](#214-技术团队主要成员)
 
 <!-- /TOC -->
 
@@ -54,4 +57,16 @@ Corda设计的五个维度： consensus（共识）, validity（交易验证）,
 
 Corda addresses these key points in distinct ways offering “different solutions for different problems.” Despite its focus on some of the same goals the team is “not building a blockchain” and they reject the idea that all data should be available to everyone. Brown explains that financial agreements between institutions need more than just a basic consensus mechanism.    
 
-“We are not building a blockchain. Unlike other designs in this space, our starting point is individual agreements between firms (“state objects”, governed by “contract code” and associated “legal prose”). We reject the notion that all data should be copied to all participants, even if it is encrypted.” （我们不认同，即使在加密的情况下，所有的数据都需要在所有参与节点拷贝）
+“We are not building a blockchain. Unlike other designs in this space, our starting point is individual agreements between firms (“state objects”, governed by “contract code” and associated “legal prose”). We reject the notion that all data should be copied to all participants, even if it is encrypted.” （我们不认同，即使在加密的情况下，所有的数据都需要在所有参与节点拷贝)    
+
+#### 2.1.2 开发在银行的业务场景    
+[http://www.coindesk.com/r3-reveals-8-areas-of-focus-for-blockchain-bank-trials/](http://www.coindesk.com/r3-reveals-8-areas-of-focus-for-blockchain-bank-trials/)    
+A consortium of over 40 financial institutions around the world is currently working on at least eight different proofs-of-concept (PoCs) to show how distributed ledgers can be used to streamline a wide range of transactions on Wall Street – and make them easier to regulate (更容易地监管).
+
+####  2.1.3 反对的声音    
+According to the CEO of Overstock.com, Patrick Byrne, the new project is likely to slow down innovation within the bitcoin industry. The new consortium, he said, is just a means used by the Wall Street bankers to stifle innovation.
+
+#### 2.1.4 技术团队主要成员    
+----|----|----
+James Carlyle | Chief Engineer | ![James Carlyle](img/20160508_jamescarlyle.png)
+Mike Hearn | Lead Platform Engineer |
