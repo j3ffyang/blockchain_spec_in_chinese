@@ -195,7 +195,7 @@ Block中也有无需hash的数据，例如交易是否成功，交易ID，等
 #### 3.4.2. World State
 
 ### 3.5. 合约（ChainCode）
-<img src="img/smartcontract_chaincode.png" width="640px" align="middle">
+<img src="img/smartcontract_chaincode.png" width="680px" align="middle">
 
 * 生命周期管理
 
