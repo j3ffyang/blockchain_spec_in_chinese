@@ -1,14 +1,15 @@
 # 区块链的技术细节
 
-Disclaimer: the content in this document was collected from my personal idea and information from open source community, specially Hyperledger and Linux Foundations.
+Disclaimer: the content in this document was collected from my personal idea and information from open source community, specially Hyperledger at Github.com and Linux Foundations.
 
 # 目录
 1. [文档目标](#文档目标)
 2. [技术层面](#技术层面)    
 2.1 [R3CEV](#R3CEV)
+2.1.1 [Corda的主要特点](#Corda的主要特点)
 
 ## 文档目标    
-阐述和分析包括R3，Digital Asset Holdings (DAH)，Chain.com等区块链软件公司在区块链（BlockChain）技术层面的细节，和Hyperledger Project的技术架构与一些细节。
+阐述和分析包括R3CEV，Digital Asset Holdings (DAH)，Chain.com等区块链软件公司在区块链（BlockChain）技术层面的细节，和Hyperledger Project的技术架构与一些细节。
 
 ## 技术层面
 ###  R3CEV
