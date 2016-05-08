@@ -87,3 +87,10 @@ https://chain.com/os/
 Chain.com Open Standard 是一款产品。它是由世界顶尖的金融公司和硅谷的工程师的独特组合，并且包括密码学家与数据科学家。我们正在设计一个BlockChain的在真实金融行业的标准。    
 
 ![Chain.com Open Standard](img/chainos.png)    
+
+* Assets Definition （资产定义）    
+多维度签名，在交易流程中设定规范和限制    
+![Asset Definition](img/asset-def.png =640x)    
+
+* 智能合约（案例之一。其他案例可以参考官方网站）    
+![smartContract Payment](img/smartcontract_payment.png)    
