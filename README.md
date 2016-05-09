@@ -245,5 +245,8 @@ Block中也有无需hash的数据，例如交易是否成功，交易ID，等
 <img src="img/github_bc_workload.png">
 
 * Slack.com – 团队协作沟通平台(channel, direct message, file upload/ share, notif, and integration)
-* StackOverflow.com –
+
 * Gerrit和Stackalytics.com
+<img src="img/stackalytics.png">
+
+* StackOverflow.com –
