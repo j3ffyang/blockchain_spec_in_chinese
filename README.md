@@ -31,6 +31,10 @@ Disclaimer: the content in this document was collected from my personal idea and
 		- [3.7. 标准](#37-标准)
 		- [3.8. 容量与运维](#38-容量与运维)
 		- [3.9. 用例](#39-用例)
+	- [4. 代码开发体系- 开源社区](#4-代码开发体系-开源社区)
+		- [4.0. 哲学](#40-哲学)
+		- [4.1. 让世界都成为你的团队（汇集世界的力量）](#41-让世界都成为你的团队汇集世界的力量)
+		- [4.2. 软件设计的艺术（API经济）](#42-软件设计的艺术api经济)
 
 <!-- /TOC -->
 
@@ -223,3 +227,23 @@ Block中也有无需hash的数据，例如交易是否成功，交易ID，等
 [https://github.com/hyperledger/hyperledger/wiki/Use-Cases](https://github.com/hyperledger/hyperledger/wiki/Use-Cases)   
 
 <img src="img/fintech_usecases.png">
+
+## 4. 代码开发体系- 开源社区
+### 4.0. 哲学
+### 4.1. 让世界都成为你的团队（汇集世界的力量）
+* Linux – 开源软件和创新的根基
+* HyperLedger项目所在的Linux Foundation - 全球180+企业加入
+
+<img src="img/lnx_foundation_mbrs.png">
+
+### 4.2. 软件设计的艺术（API经济）
+* Github.com – 用于代码版本控制(version control)，并且多团队的合作开发平台。仅仅区块链就有1300+个项目(截至2016年5月)
+
+<img src="img/github_bc.png">
+
+在Hyperledger Project之中
+<img src="img/github_bc_workload.png">
+
+* Slack.com – 团队协作沟通平台(channel, direct message, file upload/ share, notif, and integration)
+* StackOverflow.com –
+* Gerrit和Stackalytics.com
