@@ -215,6 +215,7 @@ Block中也有无需hash的数据，例如交易是否成功，交易ID，等
 分别通过“维度”，“角色”，“证书”，“用户组”，等对合约触发，合约与合约的访问控制
 
 摘自：[Access Control Specification](https://github.com/hyperledger/fabric/wiki/Access-Control-Specification)    
+
 RBAC/ABAC Functionality | CC to CC invoke | Attr Based | Role based | TCert based | User Defined Membership Services | Doable with current master| Note | Link to behave feature |    
 --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |    
 access control based on TCerts (No attributes, not role based) |  |   |   | X | X | X | asset_mgt.go  |  |    
