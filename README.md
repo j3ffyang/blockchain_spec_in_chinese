@@ -30,7 +30,7 @@ Disclaimer: the content in this document was collected from my personal idea and
 		- [3.6. 安全，认证与加密](#36-安全认证与加密)
 			- [3.6.1. 分布账本，节点认证（validating peers）和会员认证（membership management）总体架构](#361-分布账本节点认证validating-peers和会员认证membership-management总体架构)
 			- [3.6.2. Keys（公钥，私钥）身份和节点，加密（数据库和网络传输），业务安全（身份，角色）](#362-keys公钥私钥身份和节点加密数据库和网络传输业务安全身份角色)
-			- [3.6.3. 访问控制(Access Control)](#363-访问控制access-control)
+			- [3.6.3. 访问控制 (Access Control)](#363-访问控制-access-control)
 			- [3.6.4. 实时审计](#364-实时审计)
 		- [3.7. 标准](#37-标准)
 		- [3.8. 容量与运维](#38-容量与运维)
@@ -215,8 +215,17 @@ Block中也有无需hash的数据，例如交易是否成功，交易ID，等
 #### 3.6.2. Keys（公钥，私钥）身份和节点，加密（数据库和网络传输），业务安全（身份，角色）
 <img src="img/pub_key_mgmt.png" width="640px" align="middle">
 
-#### 3.6.3. 访问控制(Access Control)
+#### 3.6.3. 访问控制 (Access Control)
+分别通过“维度”，“角色”，“证书”，“用户组”，等对合约触发，合约与合约的访问控制
 
+摘自：[Access Control Specification](https://github.com/hyperledger/fabric/wiki/Access-Control-Specification)
+RBAC/ABAC Functionality | CC to CC invoke | Attr Based | Role based | TCert based | User Defined Membership Services | Doable with current master| Note | Link to behave feature |
+--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+access control based on TCerts (No attributes, not role based) |  |   |   | X | X | X | asset_mgt.go  |  |
+Role based access control using TCerts w/o using attributes    |  |   | X | X | X | X |  TBD, extension of asset_mgt.go |  |
+Attribute based access control using Tcerts with Attributes    |  | X | X |   |   |   |  extension of asset_mgt_with_roles.go |  |
+attribute access control with User Defined membership services |  |   |   |   | X |   |   |   |
+All of above | X | X | X | X | X |  |   |    |
 
 #### 3.6.4. 实时审计
 
