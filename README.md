@@ -218,14 +218,14 @@ Block中也有无需hash的数据，例如交易是否成功，交易ID，等
 #### 3.6.3. 访问控制 (Access Control)
 分别通过“维度”，“角色”，“证书”，“用户组”，等对合约触发，合约与合约的访问控制
 
-摘自：[Access Control Specification](https://github.com/hyperledger/fabric/wiki/Access-Control-Specification)
-RBAC/ABAC Functionality | CC to CC invoke | Attr Based | Role based | TCert based | User Defined Membership Services | Doable with current master| Note | Link to behave feature |
---- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-access control based on TCerts (No attributes, not role based) |  |   |   | X | X | X | asset_mgt.go  |  |
-Role based access control using TCerts w/o using attributes    |  |   | X | X | X | X |  TBD, extension of asset_mgt.go |  |
-Attribute based access control using Tcerts with Attributes    |  | X | X |   |   |   |  extension of asset_mgt_with_roles.go |  |
-attribute access control with User Defined membership services |  |   |   |   | X |   |   |   |
-All of above | X | X | X | X | X |  |   |    |
+摘自：[Access Control Specification](https://github.com/hyperledger/fabric/wiki/Access-Control-Specification)    
+RBAC/ABAC Functionality | CC to CC invoke | Attr Based | Role based | TCert based | User Defined Membership Services | Doable with current master| Note | Link to behave feature |    
+--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |    
+access control based on TCerts (No attributes, not role based) |  |   |   | X | X | X | asset_mgt.go  |  |    
+Role based access control using TCerts w/o using attributes    |  |   | X | X | X | X |  TBD, extension of asset_mgt.go |  |   
+Attribute based access control using Tcerts with Attributes    |  | X | X |   |   |   |  extension of asset_mgt_with_roles.go |  |    
+attribute access control with User Defined membership services |  |   |   |   | X |   |   |   |    
+All of above | X | X | X | X | X |  |   |    |    
 
 #### 3.6.4. 实时审计
 
