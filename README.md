@@ -194,8 +194,10 @@ message BlockTransactions {
 
 ##### 3.4.1.2. Block Hashing
 在上面的block中，```previousBlockHash```，```transactionHash```和```stateHash``` 均是利用```SHA3 SHAKE256 algorithm``` (算法)
+
 ##### 3.4.1.3. NonHashData
 Block中也有无需hash的数据，例如交易是否成功，交易ID，等
+
 #### 3.4.2. World State
 
 ### 3.5. 合约（ChainCode）
@@ -229,7 +231,11 @@ All of above | X | X | X | X | X |  |   |    |
 ### 3.7. 标准
 * API (Application Programming Interface)和CLI (Command Line Interface)
 * 账本信息数据
+[A JSON-based Serialization for Linked Data](https://www.w3.org/TR/json-ld/)
+
 * 加密算法    
+* 数据模型
+
 
 ### 3.8. 容量与运维
 * 节点
@@ -238,5 +244,6 @@ All of above | X | X | X | X | X |  |   |    |
 
 ###  3.9. 用例
 [https://github.com/hyperledger/hyperledger/wiki/Use-Cases](https://github.com/hyperledger/hyperledger/wiki/Use-Cases)   
+截止至2016年五月
 
 <img src="img/fintech_usecases.png">
