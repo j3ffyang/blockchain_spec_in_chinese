@@ -166,6 +166,9 @@ Tendermint Consensus | http://tendermint.com/docs/tendermint.pdf
 
 生产中可以同时灵活应用多个共识机制！
 
+共识机制的性能挑战
+<img src="img/20160511_consensus_performance_vs_scalability.jpg">
+
 ###  3.4. 账本
 The ledger consists of two primary pieces, the blockchain and the world state. 账本包含两部分：   
 * The blockchain/ 数据块（类似比特币的data block），记录交易和数据块间按时序链接（The blockchain is a series of linked blocks that is used to record transactions within the ledger.）
@@ -199,6 +202,28 @@ message BlockTransactions {
 Block中也有无需hash的数据，例如交易是否成功，交易ID，等
 
 #### 3.4.2. World State
+
+一个端节点的 world state 用来描述所有已经部署的chain code的状态结合。另外，一个chaincode的状态是通过键值对的集合表示。也因此在逻辑上, 一个端节点的world state也是一些键值对的集合，只不过键是由一个元组{chaincodeID，ckey}组成的。这里，我们用key来表示在world state中的键，例如world state中的key 为 {chaincodeID，key}；同时，我们用 cKey 来描述一个chain code中的唯一的键。
+
+为了便于下面的描述，我们假设 chaincodeID是一个合法的utf8字符串，ckey 和 value 可以是一个或多个字节组成的字节流。
+
+##### 3.4.2.1. 计算 world state 的哈希
+
+在一个正常工作的区块链网络中，很多种场景（比如交易提交的时候，或者与其他端节点同步的时候）都需要计算端节点所认知到的world state的加密哈希值。例如，共识协议可能会要求网络中保证至少有一定量的端节点拥有相同的world state。
+
+因为计算world state的加密哈希是一个很复杂而且高碳的操作，所以组织好world state的结构是很值得的，以便在world state发生变化的时候可以高效地对它做加密哈希计算。在负载不同的情况下把网络分成多个组织（organization）是很合适的。
+
+因为我们期待Fabric在很多不同的场景下可以工作，这些不同的场景会导致不同的工作负载，所以我们需要一个可插拔的机制来支持world state的组织和构建。
+
+##### 3.4.2.1.1 Bucket-tree
+
+Bucket-tree 是组织world state结构的一种实现。为了方便下面的描述，world state中的键表述为两个组件（chaincodeID 和 key）用一个 nil 连接起来，例如, key = chaincodeID+nil+cKey.
+
+为了计算 world state的加密哈希值，这种方法在有很多散列桶（bucket）的哈希表的基础上建立默克尔树的模型。
+
+这个方法的核心是，world state的键值对会被存放在一个哈希表中，这个哈希表由预定数量（numBuckets）的散列桶（bucket）组成。
+通过一个哈希函数 (hashFunction)来决定应该存放某一个 world state 键的散列桶号. 请注意这个哈希函数（hashFunction）并不是一个类似 SHA3 的加密哈希函数，它只是一个用来确定某一个键的散列桶号的普通函数。
+
 
 ### 3.5. 合约（ChainCode）
 <img src="img/smartcontract_chaincode.png" width="680px" align="middle">
