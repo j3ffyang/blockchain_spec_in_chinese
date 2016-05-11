@@ -206,7 +206,7 @@ Block中也有无需hash的数据，例如交易是否成功，交易ID，等
 
 #### 3.4.2. World State
 
-一个端节点的 world state 用来描述所有已经部署的chain code的状态结合。另外，一个chaincode的状态是通过键值对的集合表示。也因此在逻辑上, 一个端节点的world state也是一些键值对的集合，只不过键是由一个元组{chaincodeID，ckey}组成的。这里，我们用key来表示在world state中的键，例如world state中的key 为 {chaincodeID，key}；同时，我们用 cKey 来描述一个chain code中的唯一的键。
+一个端节点的 world state 用来描述所有已经部署的chain code的状态结合。另外，一个chaincode的状态是通过键值对的集合表示。也因此在逻辑上, 一个端节点的world state也是一些键值对的集合，只不过键是由一个元组```{chaincodeID，ckey}```组成的。这里，我们用key来表示在world state中的键，例如world state中的key 为 ```{chaincodeID，key}```；同时，我们用 ```cKey``` 来描述一个chain code中的唯一的键。
 
 为了便于下面的描述，我们假设 chaincodeID是一个合法的utf8字符串，ckey 和 value 可以是一个或多个字节组成的字节流。
 
@@ -220,7 +220,7 @@ Block中也有无需hash的数据，例如交易是否成功，交易ID，等
 
 ##### 3.4.2.1.1 Bucket-tree
 
-Bucket-tree 是组织world state结构的一种实现。为了方便下面的描述，world state中的键表述为两个组件（chaincodeID 和 key）用一个 nil 连接起来，例如, key = chaincodeID+nil+cKey.
+Bucket-tree 是组织world state结构的一种实现。为了方便下面的描述，world state中的键表述为两个组件（chaincodeID 和 key）用一个 nil 连接起来，例如， ```key = chaincodeID+nil+cKey```.
 
 为了计算 world state的加密哈希值，这种方法在有很多散列桶（bucket）的哈希表的基础上建立默克尔树的模型。
 
