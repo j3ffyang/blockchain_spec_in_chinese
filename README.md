@@ -1,6 +1,6 @@
 # 区块链的技术细节
 
-Disclaimer: the content in this document was collected from my personal idea and information from open source community, specially Hyperledger at Github.com and Linux Foundations.
+Disclaimer: the content in this document was collected from my personal idea and information from open source community, specially Hyperledger at Github.com and Linux Foundations, or specified individually.
 
 # 目录    
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
@@ -166,7 +166,7 @@ Tendermint Consensus | http://tendermint.com/docs/tendermint.pdf
 
 生产中可以同时灵活应用多个共识机制！
 
-共识机制的性能挑战 (图片源自Hyperledger在Slack.com的社区)    
+共识机制的性能挑战 (图片源自Hyperledger在Slack.com的社区。作者为来自IBM Zurich Lab的Marko Vukolic)    
 
 <img src="img/20160511_consensus_performance_vs_scalability.jpg" width="640px">
 
