@@ -167,7 +167,7 @@ Tendermint Consensus | http://tendermint.com/docs/tendermint.pdf
 生产中可以同时灵活应用多个共识机制！
 
 共识机制的性能挑战
-<img src="img/20160511_consensus_performance_vs_scalability.jpg">
+<img src="img/20160511_consensus_performance_vs_scalability.jpg" width="640px">
 
 ###  3.4. 账本
 The ledger consists of two primary pieces, the blockchain and the world state. 账本包含两部分：   
