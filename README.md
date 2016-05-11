@@ -154,7 +154,7 @@ During the past few months the startup has been working on integrating Elevence
 <img src="img/bc_validating.png" width="640px" alight="middle">
 
 ###  3.3. 共识机制（Byzantine Consensus/ 拜占庭容错）    
-默认配置（共识算法可以根据不同的业务需求调整），PBFT (practical byzantine fault tolerance) tolerates up to t<n/3 Byzantine validators (验证节点). (根据拜占庭容错机制，只要2/3验证节点确认的账本，即可成为标准账本。)    
+默认配置（共识算法可以根据不同的业务需求调整），PBFT (practical byzantine fault tolerance) tolerates up to **t<n/3** Byzantine validators (验证节点). (根据拜占庭容错机制，只要2/3验证节点确认的账本，即可成为标准账本。)    
 
 Company | Consensus Management
 ----|----    
