@@ -170,7 +170,7 @@ Tendermint Consensus | http://tendermint.com/docs/tendermint.pdf
 
 * 共识机制的性能挑战 (图片源自Hyperledger在Slack.com的社区。作者为来自IBM Zurich Lab的Marko Vukolic)    
 
-<img src="img/20160511_consensus_performance_vs_scalability.jpg" width="640px">
+    <img src="img/20160511_consensus_performance_vs_scalability.jpg" width="640px">
 
 ###  3.4. 账本
 The ledger consists of two primary pieces, the blockchain and the world state. 账本包含两部分：   
