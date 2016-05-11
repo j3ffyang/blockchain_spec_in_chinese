@@ -166,7 +166,7 @@ Tendermint Consensus | http://tendermint.com/docs/tendermint.pdf
 
 生产中可以同时灵活应用多个共识机制！
 
-共识机制的性能挑战    
+共识机制的性能挑战 (源自Hyperledger在slack的社区)    
 
 <img src="img/20160511_consensus_performance_vs_scalability.jpg" width="640px">
 
