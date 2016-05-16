@@ -97,7 +97,7 @@ Mike Hearn | Lead Platform Engineer, 来自Google和比特币社区 | ![Mike Hea
 Ian Grigg | Cryptographer | ![Ian Grigg](img/20160508_iangrigg.png)
 Tim Swanson | Head of Research 著有：Great Chain of Numbers | ![Tim Swanson](img/20160508_timswanson.png)    
 
-### 2.2 Chain.com推出Chain Open Standard    
+### 2.2. Chain.com推出Chain Open Standard    
 https://chain.com/os/    
 与十家金融和电信企业协作，在2016年5月开发推出open- source并permissioned协议软件。    
 取名：Chain Open Standard，或 Chain OS 1。    
