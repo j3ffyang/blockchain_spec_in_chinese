@@ -14,7 +14,7 @@ Disclaimer: the content in this document was collected from my personal idea and
 			- [2.1.2. 开发在银行的业务场景](#212-开发在银行的业务场景)
 			- [2.1.3. 反对的声音](#213-反对的声音)
 			- [2.1.4. 技术团队主要成员](#214-技术团队主要成员)
-		- [2.2.<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->](#22-toc-depthfrom1-depthto6-withlinks1-updateonsave1-orderedlist0-)
+		- [2.2. Chain.com推出Chain Open Standard](#22-chaincom推出chain-open-standard)
 		- [2.3. DAH收购Elevence Digital Finance](#23-dah收购elevence-digital-finance)
 	- [3. HyperLedger Project的技术架构](#3-hyperledger-project的技术架构)
 		- [3.1. 框架](#31-框架)
@@ -99,42 +99,7 @@ Mike Hearn | Lead Platform Engineer, 来自Google和比特币社区 | ![Mike Hea
 Ian Grigg | Cryptographer | ![Ian Grigg](img/20160508_iangrigg.png)
 Tim Swanson | Head of Research 著有：Great Chain of Numbers | ![Tim Swanson](img/20160508_timswanson.png)    
 
-### 2.2.<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [区块链的技术细节](#区块链的技术细节)
-- [目录](#目录)
-	- [1. 文档目标](#1-文档目标)
-	- [2. 技术层面](#2-技术层面)
-		- [2.1. R3CEV](#21-r3cev)
-			- [2.1.1. Corda的主要特点](#211-corda的主要特点)
-			- [2.1.2. 开发在银行的业务场景](#212-开发在银行的业务场景)
-			- [2.1.3. 反对的声音](#213-反对的声音)
-			- [2.1.4. 技术团队主要成员](#214-技术团队主要成员)
-		- [2.2. Chain.com推出Chain Open Standard](#22-chaincom推出chain-open-standard)
-		- [2.3. DAH收购Elevence Digital Finance](#23-dah收购elevence-digital-finance)
-	- [3. HyperLedger Project的技术架构](#3-hyperledger-project的技术架构)
-		- [3.1. 框架](#31-框架)
-		- [3.2. 验证（身份，节点等）](#32-验证身份节点等)
-		- [3.3. 共识机制（Byzantine Consensus/ 拜占庭容错）](#33-共识机制byzantine-consensus-拜占庭容错)
-		- [3.4. 账本](#34-账本)
-			- [3.4.1. BlockChain](#341-blockchain)
-				- [3.4.1.1. Block](#3411-block)
-				- [3.4.1.2. Block Hashing](#3412-block-hashing)
-				- [3.4.1.3. NonHashData](#3413-nonhashdata)
-			- [3.4.2. World State](#342-world-state)
-				- [3.4.2.1. 计算 world state 的哈希](#3421-计算-world-state-的哈希)
-				- [3.4.2.1.1 Bucket-tree](#34211-bucket-tree)
-		- [3.5. 合约（ChainCode）](#35-合约chaincode)
-		- [3.6. 安全，认证与加密](#36-安全认证与加密)
-			- [3.6.1. 分布账本，节点认证（validating peers）和会员认证（membership management）总体架构](#361-分布账本节点认证validating-peers和会员认证membership-management总体架构)
-			- [3.6.2. Keys（公钥，私钥）身份和节点，加密（数据库和网络传输），业务安全（身份，角色）](#362-keys公钥私钥身份和节点加密数据库和网络传输业务安全身份角色)
-			- [3.6.3. 访问控制 (Access Control)](#363-访问控制-access-control)
-			- [3.6.4. 实时审计](#364-实时审计)
-		- [3.7. 标准](#37-标准)
-		- [3.8. 容量与运维](#38-容量与运维)
-		- [3.9. 用例](#39-用例)
-
-<!-- /TOC --> Chain.com推出Chain Open Standard    
+### 2.2. Chain.com推出Chain Open Standard    
 https://chain.com/os/    
 与十家金融和电信企业协作，在2016年5月开发推出open- source并permissioned协议软件。    
 取名：Chain Open Standard，或 Chain OS 1。    
