@@ -37,6 +37,7 @@ Disclaimer: the content in this document was collected from my personal idea and
 		- [3.7. 标准](#37-标准)
 		- [3.8. 容量与运维](#38-容量与运维)
 		- [3.9. 用例](#39-用例)
+		- [4.0. Bullets](#40-bullets)
 
 <!-- /TOC -->
 
