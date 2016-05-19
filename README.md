@@ -37,7 +37,7 @@ Disclaimer: the content in this document was collected from my personal idea and
 		- [3.7. 标准](#37-标准)
 		- [3.8. 容量与运维](#38-容量与运维)
 		- [3.9. 用例](#39-用例)
-		- [4.0. Bullets](#40-bullets)
+	- [4.0. Bullets](#40-bullets)
 
 <!-- /TOC -->
 
@@ -279,7 +279,7 @@ All of above | X | X | X | X | X |  |   |    |
 
 <img src="img/fintech_usecases.png">
 
-### 4.0. Bullets
+## 4.0. Bullets
 * Business Scenarios at R3, Chain.com, DAH
 (当前国际上区块链领先机构在银行业的应用情况介绍，如R3等。在我国银行内部及银行间应用的构想。)
 * Technical Architecture and details    
