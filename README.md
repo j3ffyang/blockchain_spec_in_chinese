@@ -272,8 +272,22 @@ All of above | X | X | X | X | X |  |   |    |
 * 磁盘
 * 合约模板和变量
 
-###  3.9. 用例
+### 3.9. 用例
 [https://github.com/hyperledger/hyperledger/wiki/Use-Cases](https://github.com/hyperledger/hyperledger/wiki/Use-Cases)   
 截止至2016年五月
 
 <img src="img/fintech_usecases.png">
+
+### 4.0. Bullets
+* Business Scenarios at R3, Chain.com, DAH
+(当前国际上区块链领先机构在银行业的应用情况介绍，如R3等。在我国银行内部及银行间应用的构想。)
+* Technical Architecture and details    
+	* Architecture and Components
+	* Distributed Ledger    
+	* Consensus
+	* Hash and Encryption
+	* Audit and Monitoring vs. Centralization
+* Community
+	* Open Source Spirit/ Operation/ Power/ Momentum
+	* Use Cases - very latest one-time
+	* How Developers around the World are Participating the Community?
